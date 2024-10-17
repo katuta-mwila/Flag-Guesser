@@ -1,12 +1,13 @@
 body {
-  font-family: 'Comic Sans', 'jokerman';
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height:100vh;
+  font-family: "comic-sans", 'jokerman', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 /*Game container*/
@@ -14,18 +15,19 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 10px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 80%;
-  max-width: 500%;
+  /* width: 80%;
+  max-width: 500%; */
 }
 
 /*flag image*/
-.flag-image {
+.flag{
   width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  object-fit: fill;
 }
 /*answer button flex options */
 .answer-buttons {
@@ -51,6 +53,14 @@ body {
   background-color: #2980b9;
 }
 
+.correct {
+  background-color: green !important;
+}
+
+.wrong {
+  background-color: red !important;
+}
+
 /*score*/
 .score {
   font-size: 18px;
@@ -58,8 +68,8 @@ body {
 }
 
 /*feedback on answer*/
-.feedback {
+/* .feedback {
   margin-top: 10px;
   font-size: 16px;
-  color: red;
-}
+  color: red !important;
+} */
