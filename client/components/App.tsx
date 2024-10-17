@@ -1,23 +1,35 @@
 import Flag from './Flag'
 import data from '../../data/countries.ts'
-import { useState } from '.react'
+import { useState } from 'react'
+import '../style.css'
 
 function App() {
   const numCountries = data.length
 
-  const [countryNum, setCountryNum] = getState(
-    Math.floor(Math.random() * numCountries),
-  )
-  const [correctButton, setCorrectButton] = getState(0)
+  // const [countryNum, setCountryNum] = getState(
+  //   Math.floor(Math.random() * numCountries),
+  // )
+  // const [correctButton, setCorrectButton] = getState(0)
 
-  const [buttonText, setButtonText] = getState(['', '', ''])
+  // const [buttonText, setButtonText] = getState(['', '', ''])
 
   return (
-    <div>
-      <h1>App</h1>
+    <div className='game-container'>
+      <h1>Guess The Flag</h1>
+      <div className='flag'>
+        <img src ="/public/images/us.png" width = "300px" alt = "Country Flag (US)" />
+      </div>
+      <div className = "answer-buttons">
+        <button>United States</button>
+        <button>France</button>
+        <button>Germany</button>
+        <button>New Zealand</button>
+      </div>
 
-      <Flag></Flag>
-      <button
+      <div className ="feedback"></div>
+      <div className = "score">Score: 0</div>
+      {/*<Flag ></Flag>*/}
+      {/* <button
         onClick={() => {
           buttonClicked(0)
         }}
@@ -37,19 +49,25 @@ function App() {
         }}
       >
         {button[2]}
-      </button>
+      </button> */}
     </div>
   )
 }
 
-function buttonClicked(buttonNumber: number) {
-  setButtonText
+const buttonClicked = (buttonNumber: number) => {
+  if (buttonNumber === correctButton){
+    alert('Correct!')
+    setScore(score +1)
+  } else {
+    alert ('Wrong!')
+  }
+  // setButtonText()
 }
 
 function getRandomCountryName(numCountries: number) {
-  const randomCountryIndex = Math.floor(Math.random() * numCountries)
-  const randomCountryName = data[randomCountryIndex].name
-  return randomCountryName
+  // const randomCountryIndex = Math.floor(Math.random() * numCountries)
+  // const randomCountryName = data[randomCountryIndex].name
+  // return randomCountryName
 }
 
 export default App
