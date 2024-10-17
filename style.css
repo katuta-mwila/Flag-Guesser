@@ -1,9 +1,65 @@
-/*
+body {
+  font-family: 'Comic Sans', 'jokerman';
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-Body
-game container
-flag image size
-answer button
-score
+/*Game container*/
+.game-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500%;
+}
 
-*/
+/*flag image*/
+.flag-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/*answer button flex options */
+.answer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*answer button style */
+.answer-buttons button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+/*answer button hover shade*/
+.answer-buttons button:hover {
+  background-color: #2980b9;
+}
+
+/*score*/
+.score {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/*feedback on answer*/
+.feedback {
+  margin-top: 10px;
+  font-size: 16px;
+  color: red;
+}
