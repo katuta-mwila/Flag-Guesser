@@ -6,7 +6,7 @@ body {
   height:100vh;
   font-family: "comic-sans", 'jokerman', sans-serif;
   background-color: #f4f4f4;
-  background-image: url(https://img.freepik.com/free-vector/vintage-world-map-carthography-design_23-2148306186.jpg?w=996&t=st=1729215538~exp=1729216138~hmac=fe4dbd0d24dfcf22d7d11fd4559e773d17e1bcd9562a7554d7e1be27dda39509);
+  /*background-image: url(https://img.freepik.com/free-vector/vintage-world-map-carthography-design_23-2148306186.jpg);*/
   margin: 0;
   padding: 0;
 
@@ -124,10 +124,6 @@ body {
   font-size: 16px;
   color: red !important;
 } */
-
-title {
-  font-family: 'ewert', "comic-sans", 'jokerman', sans-serif;;
-}
 
 .reset {
   background-color: lightcoral;
