@@ -11,6 +11,12 @@ function App() {
   // Keeping track of countries that haven't been done yet
   const [remainingCountries, setRemainingCountries] = useState(data/*data.filter((c, i) => i < 1)*/)
 
+  /* 
+  -- Go through state variable
+  -- Go through how state changes when user interactions functions are a called ect 
+  -- changes are displayed in dom 
+  */
+
   const [countryNum, setCountryNum] = useState(
     Math.floor(Math.random() * remainingCountries.length),
   )
