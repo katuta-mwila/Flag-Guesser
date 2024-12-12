@@ -13,4 +13,4 @@ This is front end single page application of a simple flag guessing game for the
 # Instructions
 * Clone 
 * Run npm install
-* run npm run dev
+* Run npm run dev
