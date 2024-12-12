@@ -14,3 +14,8 @@ This is front end single page application of a simple flag guessing game for the
 * Clone 
 * Run npm install
 * Run npm run dev
+
+# Screenshots
+![](https://i.gyazo.com/ec5e758ea6dfdfeb8aa7187c5cfa387f.png)
+
+![](https://i.gyazo.com/93cd86c6d0f2d3c6154739842734f7d5.png)
